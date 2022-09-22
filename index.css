@@ -8,6 +8,9 @@ body, html {
     font-family: 'Arial';
     background: linear-gradient(rgb(2, 2, 2), #25020d);
     background-attachment: fixed;
+    zoom: 1.5; 
+    -moz-transform: scale(1.5); 
+    -moz-transform-origin: 0 0;
 }
 
 h1 {
