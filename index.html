@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Architektur-Helper</title>
+        <link rel="stylesheet" href="./index.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    </head>
+    <body>
+            <main>
+                <h1>Joshs hilfreiche Hilfwebsite</h1>
+                <div class="content">
+                    <form class="mrechner">
+                        <h2>Maßstabrechner</h2>
+
+                        <div class ="form-group massstab">
+                            <label>Maßstab:</label>
+                            <div>
+                                <input type="text" onchange="calcRL()" id="ms" value="100"></input>
+                            </div>
+                        </div>    
+                            
+                        <div class="form-group group-spacer">
+                            <div class ="form-group modell">
+                                <label>Distanz Modell:</label>
+                                <div>
+                                    <input type="text" onchange="calcRL()" id="ml" value="1"></input>
+                                    <select onchange="calcML()" id="mlOpt">
+                                        <option value="1000">m</option>
+                                        <option value="100" selected="selected">cm</option>
+                                        <option value="10">dm</option>
+                                        <option value="1">cm</option>
+                                    </select>
+                                </div>    
+                            </div>
+
+                            <div class ="symbol">
+                                <span class="material-icons">compare_arrows</span>
+                            </div>
+
+                            <div class ="form-group reel">
+                                <label>Distanz Realität:</label>
+                                <div>
+                                    <input type="text" onchange="calcML()" id="rl" value="10"></input>
+                                    <select onchange="calcRL()" id="rlOpt">
+                                        <option value="1000000">km</option>
+                                        <option value="1000" selected="selected">m</option>
+                                        <option value="100">cm</option>
+                                        <option value="10">dm</option>
+                                        <option value="1">cm</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </main>    
+        <footer> </footer>
+    </body>
+    <script type ="text/javascript" src="scalescript.js"></script>
+</html>
